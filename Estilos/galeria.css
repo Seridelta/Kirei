@@ -65,20 +65,24 @@ html {
 }
 
 /* footer */
-label h4 {
-  font-family: "Lora", serif;
-  color: #194351;
-}
+
 footer {
   border-top: 1px solid #194351;
 }
 .newsletter {
   margin-top: 20px;
   margin-left: 30px;
-
   display: inline-block;
+}
+.newsletter__titulo {
+  font-family: "Montserrat", sans-serif;
+  color: #194351;
+}
+.newsletter__boton {
+  padding-top: 5px;
 }
 .redes {
   display: inline;
   margin-left: 1250px;
+  padding-bottom: 20px;
 }
