@@ -36,22 +36,16 @@
       </h1>
     </div>
     <header>
-      <div id="barrita">
-        <nav>
-          <a href="./Secciones/Tienda.html" target="_blank">Tienda</a>
-          <a href="./Secciones/Servicios.html" target="_blank">Servicios</a>
-          <a href="./Secciones/Galeria.html" target="_blank">Galeria</a>
-          <a href="./Secciones/Contacto.html" target="_blank">Contacto</a>
+      <div class="menu">
+        <nav class="menu__nav">
+          <a href="./Secciones/Tienda.html" target="_blank" class="menu__nav--link">Tienda</a>
+          <a href="./Secciones/Servicios.html" target="_blank" class="menu__nav--link">Servicios</a>
+          <a href="./Secciones/Galeria.html" target="_blank" class="menu__nav--link">Galeria</a>
+          <a href="./Secciones/Contacto.html" target="_blank" class="menu__nav--link">Contacto</a>
         </nav>
       </div>
     </header>
-    <!-- <div class="hero-image">
-      <div class="hero-text">
-        <h1>KIREI</h1>
-      </div>
-    </div> -->
-
-    <!-- carrusel -->
+        <!-- carrusel -->
     <div
       id="carouselExampleCaptions"
       class="carousel slide"
@@ -155,20 +149,11 @@
     </div>
     <!-- footer -->
     <footer>
-      <form class="newsletter">
-        <label for="Newsletter">
-          <h4 class="newsletter__titulo">Enterate de las novedades</h4></label
-        ><br />
-        <input
-          type="email"
-          name="mail"
-          placeholder="ejemplo@gmail.com.ar"
-          class="form-control"
-        />
-        <div class="newsletter__boton">
-          <button class="btn btn-primary">Subscribite</button>
+      <p class="newsletter__titulo">Enterate de las novedades</p>
+        <div class="input-group mb-3 newsletter">
+          <input type="text" class="form-control" placeholder="ajemplo@gmail.com" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-blue" type="button" id="button-addon2">Subscribite</button>
         </div>
-      </form>
 
       <div class="redes">
         <a href="http://instagram.com" target="_blank"

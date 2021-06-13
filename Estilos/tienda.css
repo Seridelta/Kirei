@@ -84,9 +84,17 @@ html {
   grid-area: 1 / 3 / 2 / 4;
   padding-top: 60px;
 }
+.btn-blue {
+  background-color: #9ebeb9;
+  color: #194351;
+  border: 1px solid #194351;
+}
 .div3 {
   grid-area: 1 / 4 / 2 / 5;
   padding-top: 60px;
+}
+.buscador {
+  padding-right: 15px;
 }
 .div4 {
   grid-area: 2 / 2 / 3 / 3;
@@ -156,17 +164,17 @@ html {
 footer {
   border-top: 1px solid #194351;
 }
-.newsletter {
-  margin-top: 20px;
-  margin-left: 30px;
-  display: inline-block;
-}
 .newsletter__titulo {
   font-family: "Montserrat", sans-serif;
   color: #194351;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 30px;
 }
-.newsletter__boton {
-  padding-top: 5px;
+.newsletter {
+  margin-top: 20px;
+  margin-left: 30px;
+  padding-right: 900px;
 }
 .redes {
   display: inline;

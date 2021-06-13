@@ -64,14 +64,30 @@
               <a class="nav-link" href="#">Ver Todo</a>
             </nav>
             </div>
-        <div class="div2"> <form action="filtrar"> 
+        <div class="div2"> 
+          <!-- <form action="filtrar"> 
           <select name="filtro"><option value="Filtrar">Filtrar por</option>
             <option value="Menor">Menor Precio</option>
-            <option value="Mayor">Mayor Precio</option>
-            
-          </select></form> </div>
-        <div class="div3"> <form action="Buscar"><input type="search" name="Buscar"> 
-          <input type="button" value="Buscar" placeholder="Quue estas buscando"></form> </div>
+            <option value="Mayor">Mayor Precio</option>            
+          </select></form>  -->
+          <div class="btn-group">
+            <button class="btn btn-blue btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Filtrar por
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Mayor Precio</a></li>
+              <li><a class="dropdown-item" href="#">Menor Precio</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="div3"> 
+          <!-- <form action="Buscar"><input type="search" name="Buscar"> 
+          <input type="button" value="Buscar" placeholder="Quue estas buscando"></form>  -->
+          <div class="input-group mb-3 buscador">
+            <input type="text" class="form-control" placeholder="Que estas buscando" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-blue" type="button" id="button-addon2">Buscar</button>
+          </div>
+        </div>
         <div class="div4"> <img src="../Imagenes/Producto.png" alt="Producto" width="120px" height="auto"> <br> Producto <br> $000 </div>
         <div class="div5"><img src="../Imagenes/Producto.png" alt="Producto" width="120px" height="auto"><br> Producto <br> $000 </div>
         <div class="div6"><img src="../Imagenes/Producto.png" alt="Producto" width="120px" height="auto"><br> Producto <br> $000 </div>
@@ -83,20 +99,11 @@
         <div class="div12"><img src="../Imagenes/Producto.png" alt="Producto" width="120px" height="auto"><br> Producto <br> $000 </div>
         </div> <br><br>
       <footer>
-        <form class="newsletter">
-          <label for="Newsletter">
-            <h4 class="newsletter__titulo">Enterate de las novedades</h4></label
-          ><br />
-          <input
-            type="email"
-            name="mail"
-            placeholder="ejemplo@gmail.com.ar"
-            class="form-control"
-          />
-          <div class="newsletter__boton">
-            <button class="btn btn-primary">Subscribite</button>
-          </div>
-        </form>
+        <p class="newsletter__titulo">Enterate de las novedades</p>
+        <div class="input-group mb-3 newsletter">
+          <input type="text" class="form-control" placeholder="ajemplo@gmail.com" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-blue" type="button" id="button-addon2">Subscribite</button>
+        </div>
 
         <div class="redes">
           <a href="http://instagram.com" target="_blank"
