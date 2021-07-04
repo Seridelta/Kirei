@@ -43,6 +43,7 @@ h1 a {
 /* body */
 body {
   background-color: #ffc2b5;
+  overflow-x: hidden;
 }
 
 body,
@@ -55,6 +56,9 @@ html {
 footer {
   border-top: 1px solid #194351;
 }
+.footer {
+  display: flex;
+}
 .newsletter__titulo {
   font-family: "Montserrat", sans-serif;
   color: #194351;
@@ -65,17 +69,28 @@ footer {
 .newsletter {
   margin-top: 20px;
   margin-left: 30px;
-  padding-right: 900px;
+  padding-bottom: 20px;
+  width: 500px;
 }
 .redes {
-  display: inline;
-  margin-left: 1250px;
-  padding-bottom: 20px;
+  display: flex;
+  padding-right: 20px;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: flex-end;
+}
+.redes__img--ins,
+.redes__img--fb,
+.redes__img--yt {
+  margin: 15px;
 }
 /* furmulario de contacto */
+.form {
+  display: flex;
+  justify-content: center;
+}
 .form__fieldset {
   width: 600px;
-  margin-left: 350px;
   margin-top: 60px;
   margin-bottom: 30px;
   padding: 20px;
@@ -103,4 +118,50 @@ legend {
   background-color: #9ebeb9;
   color: #194351;
   border: 1px solid #194351;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 768px) {
+  /* formulario */
+  .form__fieldset {
+    height: 90%;
+    width: 80%;
+  }
+  /* footer */
+  .newsletter {
+    padding-right: 0px;
+    width: 300px;
+    padding-bottom: 0px;
+    margin-left: 0px;
+  }
+  .newsletter__titulo {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__newsletter {
+    display: flex;
+    justify-content: center;
+  }
+  .redes {
+    justify-content: center;
+    margin: 0px;
+    padding-right: 0px;
+  }
+  .redes__img--ins,
+  .redes__img--fb,
+  .redes__img--yt {
+    margin: 40px;
+  }
+  .redes__img--ins {
+    width: 40px;
+  }
+  .redes__img--fb {
+    width: 18px;
+  }
+  .redes__img--yt {
+    width: 48px;
+  }
 }

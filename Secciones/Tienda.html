@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Encontrá eso que estas buscando">
+  <meta name="keywords" content="Kirei, maquillaje, tienda, productos, servicios, clases,
+  automaquillaje, maquillaje artistico, produccion de fotos, ofertas, novias">
   <title>Tienda</title>
   <!-- boostrap -->
   <link
@@ -29,7 +32,7 @@
     <h1>
       <a href="../index.html"
         ><img
-          src="../Imagenes/Kirei-logo.png"
+          src="https://i.ibb.co/SdKJWv4/Kirei-logo.png"
           alt="Logo"
           width="250px"
           height="auto"
@@ -37,39 +40,39 @@
     </h1>
   </div>
     <header>
-      <div id="barrita">
+      <div class="menu">
         
-        <nav class="principal">
-          <a href="../Secciones/Tienda.html" target="_blank">Tienda</a>
-          <a href="../Secciones/Servicios.html" target="_blank">Servicios</a>
-          <a href="../Secciones/Galeria.html" target="_blank">Galeria</a>
-          <a href="../Secciones/Contacto.html" target="_blank">Contacto</a>
+        <nav class="menu__nav">
+          <a href="../Secciones/Tienda.html" class="menu__nav--link">Tienda</a>
+          <a href="../Secciones/Servicios.html" class="menu__nav--link">Servicios</a>
+          <a href="../Secciones/Galeria.html" class="menu__nav--link">Galeria</a>
+          <a href="../Secciones/Contacto.html" class="menu__nav--link">Contacto</a>
         </nav>
        
-      </div> <br><br>
+      </div>
+      
       <!-- Grid -->
       <div class="parent">
-        <div class="div1"> 
-          <!-- <nav class="menu"> 
-            <a href="">Piel</a> <br>
-            <a href="">Ojos</a> <br>
-            <a href="">Labios</a> <br>
-            <a href="">Skin Care</a> <br>
-             <a href="">Ver Todo</a> </nav>  -->
-             <nav class="nav flex-column">
-              <a class="nav-link" href="#">Piel</a>
-              <a class="nav-link" href="#">Ojos</a>
-              <a class="nav-link" href="#">Labios</a>
-              <a class="nav-link" href="#">Skin Care</a>
-              <a class="nav-link" href="#">Ver Todo</a>
-            </nav>
+        <!-- menu hamburgusa -->
+         <div class="div1"> 
+          <nav role="navigation" >
+            <div id="menuToggle">   
+            <input type="checkbox"/>    
+               <span></span>
+               <span></span>
+               <span></span>
+           <ul id="menu">
+             <li><a href="#">Piel</a></li>
+             <li><a href="#">Ojos</a></li>
+             <li><a href="#">Labios</a></li>
+             <li><a href="#">Skin Care</a></li>
+             <li><a href="#">Ver Todo</a></li>
+           </ul>
+            </div>
+          </nav>
             </div>
         <div class="div2"> 
-          <!-- <form action="filtrar"> 
-          <select name="filtro"><option value="Filtrar">Filtrar por</option>
-            <option value="Menor">Menor Precio</option>
-            <option value="Mayor">Mayor Precio</option>            
-          </select></form>  -->
+         
           <div class="btn-group">
             <button class="btn btn-blue btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Filtrar por
@@ -81,54 +84,68 @@
           </div>
         </div>
         <div class="div3"> 
-          <!-- <form action="Buscar"><input type="search" name="Buscar"> 
-          <input type="button" value="Buscar" placeholder="Quue estas buscando"></form>  -->
+          
           <div class="input-group mb-3 buscador">
-            <input type="text" class="form-control" placeholder="Que estas buscando" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <input type="text" class="form-control" placeholder="¿Que necesitás?" aria-label="Recipient's username" aria-describedby="button-addon2">
             <button class="btn btn-blue" type="button" id="button-addon2">Buscar</button>
           </div>
         </div>
-        <div class="div4"> <img src="../Imagenes/Producto.png" alt="Producto" width="120px" height="auto"> <br> Producto <br> $000 </div>
-        <div class="div5"><img src="../Imagenes/Producto.png" alt="Producto" width="120px" height="auto"><br> Producto <br> $000 </div>
-        <div class="div6"><img src="../Imagenes/Producto.png" alt="Producto" width="120px" height="auto"><br> Producto <br> $000 </div>
-        <div class="div7"><img src="../Imagenes/Producto.png" alt="Producto" width="120px" height="auto"><br> Producto <br> $000</div>
-        <div class="div8"><img src="../Imagenes/Producto.png" alt="Producto" width="120px" height="auto"><br> Producto <br> $000 </div>
-        <div class="div9"><img src="../Imagenes/Producto.png" alt="Producto" width="120px" height="auto"><br> Producto <br> $000 </div>
-        <div class="div10"><img src="../Imagenes/Producto.png" alt="Producto" width="120px" height="auto"><br> Producto <br> $000 </div>
-        <div class="div11"><img src="../Imagenes/Producto.png" alt="Producto" width="120px" height="auto"><br> Producto <br> $000 </div>
-        <div class="div12"><img src="../Imagenes/Producto.png" alt="Producto" width="120px" height="auto"><br> Producto <br> $000 </div>
-        </div> <br><br>
-      <footer>
-        <p class="newsletter__titulo">Enterate de las novedades</p>
-        <div class="input-group mb-3 newsletter">
-          <input type="text" class="form-control" placeholder="ajemplo@gmail.com" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button class="btn btn-blue" type="button" id="button-addon2">Subscribite</button>
+        <div class="div4"> <img src="https://i.ibb.co/Gkc1XCG/Producto.png" alt="Producto" width="120px" height="auto" class="grid__img"> <p class="grid__p"> Producto</p> <p>$000</p> </div>
+        <div class="div5"><img src="https://i.ibb.co/Gkc1XCG/Producto.png" alt="Producto" width="120px" height="auto" class="grid__img"><p class="grid__p"> Producto</p>  <p>$000</p> </div>
+        <div class="div6"><img src="https://i.ibb.co/Gkc1XCG/Producto.png" alt="Producto" width="120px" height="auto" class="grid__img"> <p class="grid__p">Producto</p> <p>$000</p> </div>
+        <div class="div7"><img src="https://i.ibb.co/Gkc1XCG/Producto.png" alt="Producto" width="120px" height="auto" class="grid__img"><p class="grid__p"> Producto</p>  <p>$000</p></div>
+        <div class="div8"><img src="https://i.ibb.co/Gkc1XCG/Producto.png" alt="Producto" width="120px" height="auto" class="grid__img"> <p class="grid__p">Producto</p>  <p>$000</p> </div>
+        <div class="div9"><img src="https://i.ibb.co/Gkc1XCG/Producto.png" alt="Producto" width="120px" height="auto" class="grid__img"> <p class="grid__p">Producto</p>  <p>$000</p> </div>
+        <div class="div10"><img src="https://i.ibb.co/Gkc1XCG/Producto.png" alt="Producto" width="120px" height="auto" class="grid__img"> <p class="grid__p">Producto</p>  <p>$000</p> </div>
+        <div class="div11"><img src="https://i.ibb.co/Gkc1XCG/Producto.png" alt="Producto" width="120px" height="auto" class="grid__img"> <p class="grid__p">Producto</p>  <p>$000</p> </div>
+        <div class="div12"><img src="https://i.ibb.co/Gkc1XCG/Producto.png" alt="Producto" width="120px" height="auto" class="grid__img"> <p class="grid__p">Producto</p>  <p>$000</p> </div>
+        </div> 
+      <!-- footer -->
+        <footer>
+          <p class="newsletter__titulo">Enterate de las novedades</p>
+      <div class="footer">
+        <div class="footer__newsletter">
+          <div class="input-group mb-3 newsletter">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="ejemplo@gmail.com"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn btn-blue" type="button" id="button-addon2">
+              Subscribite
+            </button>
+          </div>
         </div>
 
         <div class="redes">
-          <a href="http://instagram.com" target="_blank"
+          <a href="http://instagram.com" target="_blank" rel="noreferrer"
             ><img
-              src="../Imagenes/IG.png"
+              src="https://i.ibb.co/JCxZmq7/IG-min.png"
               width="25"
               height="auto"
               alt="Logo de instagram"
+              class="redes__img--ins"
           /></a>
-          <a href="http://facebook.com" target="_blank"
+          <a href="http://facebook.com" target="_blank" rel="noreferrer"
             ><img
-              src="../Imagenes/FB.png"
-              a
+              src="https://i.ibb.co/d7hVcgQ/FB-min.png"
               width="12"
               height="auto"
-              lt="Logo de facebook"
+              alt="Logo de facebook"
+              class="redes__img--fb"
           /></a>
-          <a href="http://youtube.com" target="_blank"
+          <a href="http://youtube.com" target="_blank" rel="noreferrer"
             ><img
-              src="../Imagenes/YT.png"
+              src="https://i.ibb.co/CQJJZvB/YT-min.png"
               width="33"
               height="auto"
               alt="Logo de youtube"
+              class="redes__img--yt"
           /></a>
         </div>
+      </div>
       </footer>
 </body>
 </html>
