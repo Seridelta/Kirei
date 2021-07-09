@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="¿Tenes alguna duda? ¿Querés solicitar un presupuesto? Contactame">
-    <meta name="keywords" content="Kirei, maquillaje, tienda, productos, servicios, clases,
-    automaquillaje, maquillaje artistico, produccion de fotos, ofertas, novias, contacto, dudas, presupuesto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="¿Tenes alguna duda? ¿Querés solicitar un presupuesto? Contactame"
+    />
+    <meta
+      name="keywords"
+      content="Kirei, maquillaje, tienda, productos, servicios, clases,
+    automaquillaje, maquillaje artistico, produccion de fotos, ofertas, novias, contacto, dudas, presupuesto"
+    />
     <title>Contacto</title>
     <!-- boostrap -->
     <link
@@ -21,61 +27,82 @@
       crossorigin="anonymous"
     ></script>
     <!-- font -->
-  <link
+    <link
       href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../Estilos/contacto.css" />
-</head>
-<body>
-  <!-- logo -->
-  <div class="logo">
-    <h1>
-      <a href="../index.html"
-        ><img
-          src="https://i.ibb.co/SdKJWv4/Kirei-logo.png"
-          alt="Logo"
-          width="250px"
-          height="auto"
-      /></a>
-    </h1>
-  </div>
+    <!-- <link rel="stylesheet" href="../Estilos/contacto.css" /> -->
+    <link rel="stylesheet" href="../sass/main.css" />
+  </head>
+  <body>
+    <!-- logo -->
+    <div class="logo">
+      <h1>
+        <a href="../index.html"
+          ><img
+            src="https://i.ibb.co/SdKJWv4/Kirei-logo.png"
+            alt="Logo"
+            width="250px"
+            height="auto"
+        /></a>
+      </h1>
+    </div>
     <header>
-      <!-- menu -->
-      <div id="barrita">
-        
-        <nav>
-          <a href="../Secciones/Tienda.html" >Tienda</a>
-          <a href="../Secciones/Servicios.html" >Servicios</a>
-          <a href="../Secciones/Galeria.html" >Galeria</a>
-          <a href="../Secciones/Contacto.html" >Contacto</a>
+      <div class="menu">
+        <nav class="menu__nav">
+          <a href="../Secciones/Tienda.html" class="menu__nav--link">Tienda</a>
+          <a href="../Secciones/Servicios.html" class="menu__nav--link"
+            >Servicios</a
+          >
+          <a href="../Secciones/Galeria.html" class="menu__nav--link"
+            >Galeria</a
+          >
+          <a href="../Secciones/Contacto.html" class="menu__nav--link"
+            >Contacto</a
+          >
         </nav>
-        
       </div>
-      <!-- formulario -->
-      <form class="form">
-        
-        <div class="form__fieldset">
-          
-            <legend class="form__item">Contactame</legend>
-          <label for="Nombre" class="form__label">Nombre</label>
-          
-          <input type="text" name="Nombre" class="form-control form__item" placeholder="Tu Nombre">
-          
-          <label for="Mail" class="form__label">Mail</label>
-                    
-          <input type="email" name="Mail" class="form-control input" placeholder="ejemplo@gmail.com.ar">
-                
-          <label for="Consulta" class="form__label">Consulta</label>
-          <textarea name="Consulta" id="" cols="30" rows="10" placeholder="Escribí acá tu consulta" class="form-control"></textarea><br>
-          
-          <button class="btn btn-blue">Enviar</button> </div>
-        
-      </form>
-     
-      <footer>
-        <!-- Subscripcion -->
-        <p class="newsletter__titulo">Enterate de las novedades</p>
+    </header>
+    <!-- formulario -->
+    <form class="form">
+      <div class="form__fieldset">
+        <legend class="form__item">Contactame</legend>
+        <label for="Nombre" class="form__label">Nombre</label>
+
+        <input
+          type="text"
+          name="Nombre"
+          class="form-control form__item"
+          placeholder="Tu Nombre"
+        />
+
+        <label for="Mail" class="form__label">Mail</label>
+
+        <input
+          type="email"
+          name="Mail"
+          class="form-control input"
+          placeholder="ejemplo@gmail.com.ar"
+        />
+
+        <label for="Consulta" class="form__label">Consulta</label>
+        <textarea
+          name="Consulta"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Escribí acá tu consulta"
+          class="form-control"
+        ></textarea
+        ><br />
+
+        <button class="btn btn-blue">Enviar</button>
+      </div>
+    </form>
+
+    <footer>
+      <!-- Subscripcion -->
+      <p class="newsletter__titulo">Enterate de las novedades</p>
       <div class="footer">
         <div class="footer__newsletter">
           <div class="input-group mb-3 newsletter">
@@ -119,7 +146,6 @@
           /></a>
         </div>
       </div>
-      </footer>
-      
-</body>
+    </footer>
+  </body>
 </html>

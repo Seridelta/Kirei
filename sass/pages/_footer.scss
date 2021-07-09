@@ -1,0 +1,73 @@
+/* footer */
+footer {
+  border-top: 1px solid #194351;
+}
+.footer {
+  display: flex;
+  .newsletter {
+    margin-top: $oper1 * 4;
+    margin-left: $oper1 * 6;
+    padding-bottom: $oper1 * 4;
+    width: $oper1 * 100;
+  }
+}
+.newsletter__titulo {
+  font-family: "Montserrat", sans-serif;
+  color: #194351;
+  font-size: $oper1 * 5;
+  margin-top: $oper1 * 4;
+  margin-left: $oper1 * 6;
+}
+
+.redes {
+  display: flex;
+  padding-right: $oper1 * 4;
+  margin-top: $oper1 * 4;
+  width: 100%;
+  justify-content: flex-end;
+  &__img--ins,
+  &__img--fb,
+  &__img--yt {
+    margin: $oper1 * 3;
+  }
+}
+@media (max-width: 768px) {
+  /* footer */
+  .footer {
+    flex-direction: column;
+    &__newsletter {
+      display: flex;
+      justify-content: center;
+    }
+    .newsletter {
+      padding-right: 0px;
+      width: $oper1 * 60;
+      padding-bottom: 0px;
+      margin-left: 0px;
+    }
+  }
+  .newsletter__titulo {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .redes {
+    justify-content: center;
+    margin: 0px;
+    padding-right: 0px;
+    &__img--ins,
+    &__img--fb,
+    &__img--yt {
+      margin: $oper1 * 8;
+    }
+    &__img--ins {
+      width: $oper1 * 8;
+    }
+    &__img--fb {
+      width: 18px;
+    }
+    &__img--yt {
+      width: 48px;
+    }
+  }
+}

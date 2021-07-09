@@ -1,0 +1,37 @@
+/* furmulario de contacto */
+.form {
+  display: flex;
+  justify-content: center;
+  &__fieldset {
+    width: $oper1 * 120;
+    margin-top: $oper1 * 12;
+    margin-bottom: $oper1 * 6;
+    padding: $oper1 * 4;
+    background-color: $rosa;
+    border: 1px solid $azul;
+  }
+  &__label {
+    font-family: $monserrat;
+    color: $azul;
+    font-size: $oper1 * 3;
+    font-weight: bold;
+  }
+  &__item {
+    margin-bottom: $oper1 * 4;
+  }
+  .input {
+    margin-bottom: $oper1 * 8;
+  }
+}
+legend {
+  font-family: $monserrat;
+  color: $azul;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  /* formulario contacto*/
+  .form__fieldset {
+    height: 90%;
+    width: 80%;
+  }
+}
